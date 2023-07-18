@@ -1,0 +1,347 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Solway', serif;
+}
+.container{
+    width: 100%;
+    /* for setting height 100% of the current running device */
+    height: 100vh;
+    /* The entire content should be relative in position to main container */
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* the items will be aligning at the 100% width of container(right most corner) */
+    /* so setting width for navbar */
+    width:85%;
+    margin-left: 100px;
+    /* to give spacing in top ofr a flex item , we need to give align-item:center */
+    align-items: center;
+}
+.logo{
+    width: 150px;
+}
+.lists{
+    /* display: inline; */
+    display: inline-block;
+    margin:10px 20px;
+}
+.links{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+}
+.links:hover{
+    color:#ff0000
+}
+/* HOME SECTION STYLING */
+
+
+
+
+
+
+
+
+/* TITLE SECTIONSTYLING */
+.title{
+    margin: 13% 0px 0px 8%;
+}
+
+.title-h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#last-name{
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title-cv{
+    /* its link but should be like a button */
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding:7px 6px;
+    font-weight: 600;
+
+    /* to give top,bottom margin  */
+    display: inline-block;
+
+    /* for extra margin  */
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+/* IMAGE  SECTION STYLING */
+.images{
+    /* position relative to .container */
+    position: absolute;
+    /* removing extra styling gven by browser */
+    bottom: 0px;
+    /* need to make images small, but here styling the parent div containing both images */
+    width: 45%;
+    height: 80%;
+    /* shifting to right */
+    right: 0px;
+
+    /* my own editing */
+    top: 80px;
+    
+}
+.image-group{
+    /* To make the girl image over background image(yellow)  */
+    position: absolute;
+    /* height is different or both image ,make it same */
+    height: 100%;
+    /* FOR HOVERING  THE GIRL SHIFTING TO LEFT AND IMAGE SHIIFTING TO TOP. SO TO GIVE THAT INITIALLy set value for both */
+    bottom:0px ;
+    left: 50%;
+    /* but when giving left 50%, its going towards right so need to nullify that effect so transform and translate will take the image back to th previous position by the negative % of left:50% */
+    transform: translate(-50%);
+    /*  transition(slow movement ) for bottom 1 sec and left 1 sec*/
+    transition: bottom 1s, left 1s;
+}
+/* FOR HOVERING  THE GIRL SHIFTING TO LEFT AND IMAGE SHIIFTING TO TOP. */
+.images:hover #girl-background{
+    /* bottom: 70px; */
+    bottom: 40px;
+}
+.images:hover #girl-image{
+    left: 40%;
+    /* need slow movement for both images so transition style given to .image-group */
+}
+
+/* about section statred inside home section and te amrgin of both home nad about section should be same */
+/* same margin of .title container with top margin of 8% extra */
+#about-section, #skill-section{
+    margin: 13% 8% 0px 8%;
+}
+.section-head{
+    /* shpuld be at center */
+    text-align: center;
+}
+.section-head>h2{
+    font-size: 30px;
+}
+.section-head>span{
+    font-size: 20px;
+    color: #00ff00;
+}
+/* styling imag and content */
+
+.about-content{
+    display: grid;
+    /* but no change need to give number of columns */
+    grid-template-columns: auto auto;
+    /* OR instaed of auto auto, we can give eqully parts */
+    /* grid-template-columns: repeat(number columns,width needed fo the nuber of columns); */
+    /* grid-template-columns: repeat(2,1fr); ----------> ifr=255px*/
+
+
+    /* to gve gap between columns */
+    gap:2rem;
+    margin-top: 1rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about-details{
+    font-size: 18px;
+    font-weight: 400;
+    /* equal spacing in left and right */
+    text-align: justify;
+}
+.information{
+    margin-top: 1rem;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+.info-box span{
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/* SKILL SECTION */
+.skill-content{
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    margin-top: 1rem;
+}
+
+.skill-img img{
+    width: 80%;
+    border-radius: 1rem;
+    padding-left: 4rem;
+}
+
+/* SKILL BARS STYLING */
+
+.bar-container{
+    /* both h2 title and span need to be at same line so flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+
+    /* THE bars should be one above another so position relative for parent container and position absolute for the bars */
+    position: relative;
+}
+
+.bar-container h2,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+/* INdiVIDUAL SKILL BARS  */
+
+.base-bar{
+    width: 100%;
+    background-color: #000000;
+    /* not able to see , SO give HEIGHT*/
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    /* as position absolute , it will be comming from top left of the main container = bar container, so now we will give left and top as position is absolute */
+    bottom: 0px;
+    left: 0px;
+}
+
+.html-bar{
+    background-color: orange;
+    width: 95%;
+}
+.css-bar{
+    background-color: orange;
+    width: 84%;
+}
+.js-bar{
+    background-color: orange;
+    width: 90%;
+}
+.react-bar{
+    background-color: orange;
+    width: 87%;
+}
+
+
+
+
+
+
+
+
+/* CONTACT styling */
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%
+}
+.icon,.up-arrow{
+    width: 50px;
+    height: 50px;
+    /* border iven just to know how it looks and know the correct form */
+    /* border: 1px solid; */
+
+    /*  To make the div circle----- if the height amd width are same , giving border-radius 50% make them circle */
+    border-radius: 50%;
+
+    /* To make the icons exactly at center of the border cicle use flex */
+    display: flex;
+
+    /*  To make the icons to horizontal center of div */
+    justify-content: center;
+
+    /*  To make the icons to vertically center of div */
+    align-items: center;
+
+    margin: 0px 10px;
+}
+
+/* To change the icon size */
+.icon i{
+    font-size: 30px;
+
+    /* If needed to change the color of icon,  */
+    /* already changed when icon selected from font awsome website */
+    /* color: black !important; */
+}
+
+/* hovering icons */
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow,orange,rgb(244,240,240));
+}
+
+.icon:hover i{
+    color: #ffffff !important;
+    /*  A SHAKE ANIMATION NEEDED TO DESIGN */
+    animation: shake 0.75s;
+}
+
+/* defining  SHAKE Animation */
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    } 
+    30%{
+        transform: rotate(15deg);
+    } 
+    40%{
+        transform: rotate(-15deg);
+    } 
+}
+
+
+/* UP ARROW */
+footer{
+    margin:3rem 0px
+}
+
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right, yellow,orange,rgb(244,240,240));
+    margin: 0px 20px 30px 0px;
+}
+.up-arrow:hover i{
+    color: #ffffff;
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+background-color: orange;
+border-radius: 10px;
+}
+/* moving scroll */
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 10px;
+    width: 2px;
+}
+::-webkit-scrollbar-button{
+    background-color: black;
+    color: red;
+}

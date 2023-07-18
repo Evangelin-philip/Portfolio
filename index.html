@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINKING fontawosome for icons -->
+    <script src="https://kit.fontawesome.com/51c097c745.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <div class="container" id="container">
+      <nav class="navbar">
+        <!-- logo -->
+        <img class="logo" src="./images/logo.jpg" alt="LOGO" />
+        <!-- list(menu, skills,about,contact) -->
+        <ul>
+          <li class="lists"><a class="links" href="#home_section">HOME</a></li>
+          <li class="lists"><a class="links" href="#about-section">ABOUT</a></li>
+          <li class="lists"><a class="links" href="#skill-section">SKILLS</a></li>
+          <li class="lists"><a class="links" href="#contact-section">CONTACT</a></li>
+        </ul>
+      </nav>
+      <section id="home-section">
+        <div class="title">
+            <h1 class="title-h1"> I'm Evangelin <span id="last-name">George</span></h1>
+            <p class="title-p">This is my official portfolio website to describe all <br>details and work experience in Web development</p>
+            <a href="./pdfs/EVANGELIN GEORGE_DEVELOPER  (RESUME).pdf" class="title-cv" download>DOWLOAD CV</a>
+        </div>
+        <div class="images">
+            <!-- background-yello -->
+             <img class="image-group" id="girl-background" src="./images/girlBackground.png" alt="girl-background">
+             <!-- girl image -->
+             <img class="image-group" id="girl-image" src="./images/girlImage.png" alt="girl-imag">
+        </div>
+      </section>
+      <section id="about-section" >
+        <div class="section-head">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="./images/about.jpg" alt="About Image">
+            </div>
+            <div class="about-details">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus provident quisquam neque nostrum, alias fugit deleniti cum amet vero aspernatur perferendis ab sit ad. Ea hic maiores esse expedita.</p>
+                <div class="information">
+                    <!-- three set od div ,each containing an icon and content -->
+                    <div class="info-box">
+                        <i class="fa-solid fa-user" style="color: #000000;"></i>
+                        <span>Evangelin George</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="fa-solid fa-mobile" style="color: #000000;"></i>
+                        <span>+91 75106 15471</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                        <span>george.evangelin21@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="skill-section">
+        <div class="section-head">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+        <div class="skill-content">
+            <!-- for skill progress bar -->
+            <div class="skill-bar">
+                <!-- HTML bar -->
+                <div class="bar-container">
+                    <h2>HTML</h2>
+                    <span>95%</span>
+                    <div class="base-bar"></div>
+                    <div class=" base-bar html-bar"></div>
+                </div>
+                <!-- CSS bar -->
+                <div class="bar-container">
+                    <h2>CSS</h2>
+                    <span>84%</span>
+                    <div class="base-bar"></div>
+                    <div class=" base-bar css-bar"></div>
+                </div>
+                <!-- JAVASCRIPT bar -->
+                <div class="bar-container">
+                    <h2>JavaScript</h2>
+                    <span>90%</span>
+                    <div class="base-bar"></div>
+                    <div class=" base-bar js-bar"></div>
+                </div>
+                <!-- REACT bar -->
+                <div class="bar-container">
+                    <h2>React</h2>
+                    <span>87%</span>
+                    <div class="base-bar"></div>
+                    <div class=" base-bar react-bar"></div>
+                </div>
+            </div>
+            <!-- for skill img  -->
+            <div class="skill-img">
+                <img src="./images/skill.jpg" alt="Skill-image">
+            </div>
+        </div>
+    </section>
+    <section id="contact-section">
+        <div class="section-head">
+            <h2>Contacts</h2>
+            <span>My Contacts</span>
+        </div>
+        <!-- div for icon collections -->
+        <div class="icon-set">
+            <!-- individual div for eah icons  -->
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/evangelin-george-0a887a221/">
+                    <i class="fa-brands fa-linkedin-in" style="color: #0080ff;"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/topics/login">
+                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Den">
+                    <i class="fa-brands fa-twitter" style="color: #0080ff;"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://web.whatsapp.com/">
+                    <i class="fa-brands fa-whatsapp" style="color: #008000;"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/accounts/login/">
+                    <i class="fa-brands fa-instagram" style="color: #800080;"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com/evangelin.george.9?mibextid=ZbWKwL">
+                    <i class="fa-brands fa-facebook" style="color: #0080c0;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p style="text-align: center; font-weight: bold;">All rights Reserved &copy; My portfolio &reg; Evangelin</p>
+        <div class="up-arrow">
+            <a href="#container"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+        </div>
+    </footer>
+    </div>
+  </body>
+</html>
